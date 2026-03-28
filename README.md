@@ -16,24 +16,27 @@ To write and execute an Assembly language program for finding the square of a gi
 
 ## PROGRAM
 ```
-
-
-
-
-
-
-
-
+ORG 0000H
+MOV R0,#50H
+MOV A,@R0 
+MOV B,@R0 
+MUL AB
+INC R0 
+MOV @R0,A
+END
 
 ```
 
 ## OUTPUT
+<img width="957" height="217" alt="image" src="https://github.com/user-attachments/assets/c1607fae-3230-49bf-9119-b206c7dd1cdc" />
 
 
 ## RESULT
 Thus, the square of the given data is calculated using 8051 Keil.
 
 # 8051 Cube  Program
+
+
 
 ## AIM
 To write and execute an Assembly language program for finding the cube of a given data using 8051 microcontroller in Keil software.
@@ -49,19 +52,22 @@ To write and execute an Assembly language program for finding the cube of a give
 4. The output cube value is stored in a memory location.
 
 ## PROGRAM
-```
-
-
-
-
-
-
-
-
-```
+ORG 00H
+MOV R0,#50H
+MOV A,@R0
+MOV B,A
+MUL AB
+MOV B,@R0
+MUL AB
+INC R0
+MOV @R0,A
+INC R0
+MOV @R0,B
+END
 
 
 ## OUTPUT
+<img width="961" height="257" alt="image" src="https://github.com/user-attachments/assets/e6843e40-049e-4219-aabe-bcb8e57ea4be" />
 
 ## RESULT
 Thus, the cube of the given data is calculated using 8051 Keil.
