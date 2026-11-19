@@ -19,12 +19,19 @@ To write and execute an Assembly language program for finding the square of a gi
 ## PROGRAM
 ```
 ORG 0000H
+
 MOV R0,#50H
-MOV A,@R0 
-MOV B,@R0 
+
+MOV A,@R0
+ 
+MOV B,@R0
+ 
 MUL AB
-INC R0 
+
+INC R0
+ 
 MOV @R0,A
+
 END
 
 ```
